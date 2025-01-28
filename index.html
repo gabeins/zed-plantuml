@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantUML Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>PlantUML Preview</h1>
+    <iframe id="plantuml-preview" src="" frameborder="0"></iframe>
+
+    <script>
+        // Dynamically update the iframe source with the PlantUML URL
+        const iframe = document.getElementById('plantuml-preview');
+        const plantumlUrl = "https://www.plantuml.com/plantuml/svg/" + encodeURIComponent(window.location.search.substring(1));
+        iframe.src = plantumlUrl;
+    </script>
+</body>
+</html>

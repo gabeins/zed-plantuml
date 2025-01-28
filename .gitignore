@@ -206,3 +206,65 @@ next-env.d.ts
 
 # playwright
 test-results
+
+# Target directory for compiled Rust files
+/target/
+
+# Rust-specific files
+**/*.rs.bk
+**/*.rs.bak
+*.rmeta
+
+# Build artifacts
+*.d
+*.o
+*.rlib
+*.exe
+*.so
+*.dylib
+*.dll
+*.a
+
+# Dependency and lock files
+Cargo.lock
+Cargo.toml.orig
+
+# Logs and debug files
+*.log
+*.debug
+*.trace
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node.js files (if using npm/yarn for additional tools)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Zed extension output
+/extension.toml.bk
+/extension.toml.bak
+zed-out/
+
+# Miscellaneous
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+
+# PlantUML diagrams (if any intermediate files are generated)
+/diagrams/
+*.uml
+*.png
+*.svg
