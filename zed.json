@@ -1,0 +1,25 @@
+{
+  "name": "PlantUML Plugin",
+  "description": "Adds support for PlantUML syntax highlighting and features.",
+  "entry": "dist/index.js",
+  "main": "./target/release/zed-plantuml",
+  "activationEvents": [
+    "onLanguage:plantuml"
+  ],
+  "commands": [
+    {
+      "name": "extension.previewPlantUML",
+      "title": "Preview PlantUML",
+      "description": "Render the current file as a PlantUML diagram",
+      "command": "extension.previewPlantUML"
+    }
+  ],
+  "panels": [
+    {
+      "name": "plantumlPreview",
+      "title": "PlantUML Preview",
+      "type": "iframe",
+      "url": "index.html"
+    }
+  ]
+}

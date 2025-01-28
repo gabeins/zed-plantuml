@@ -1,11 +1,27 @@
 id = "plantuml"
-name = "PlantUML"
-version = "0.1.0"
+name = "PlantUML Viewer"
+version = "1.0.0"
+main = "./target/wasm32-wasip1/release/zed_plantuml.wasm"
 schema_version = 1
 authors = ["Gabriel Silva <gabe@gabe.id>"]
-description = "PlantUML support."
+description = "Adds support for PlantUML syntax highlighting and rendering PlantUML diagrams."
 repository = "https://github.com/gabeidx/zed-plantuml"
 
 [grammars.plantuml]
 repository = "https://github.com/Szeliga/tree-sitter-plantuml"
 commit = "a3cfbf844d727b077f0070769e6d1c0977cc58f9"
+
+[[commands]]
+name = "plantuml.preview"
+title = "Preview PlantUML Diagram"
+description = "Render the current file as a PlantUML diagram"
+command = "extension.previewPlantUML"
+
+[activationEvents]
+onLanguage = ["plantuml"]
+
+[[panels]]
+name = "plantuml"
+title = "PlantUML Preview"
+type = "iframe"
+url = "index.html"

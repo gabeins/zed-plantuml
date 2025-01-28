@@ -1,0 +1,15 @@
+@startuml
+actor User
+participant "Web App" as WebApp
+participant "Database" as DB
+
+User -> WebApp: Login
+WebApp -> DB: Verify credentials
+DB --> WebApp: Credentials valid
+WebApp --> User: Access granted
+
+User -> WebApp: Request data
+WebApp -> DB: Query data
+DB --> WebApp: Return data
+WebApp --> User: Show data
+@enduml
