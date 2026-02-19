@@ -1,11 +1,11 @@
 id = "plantuml"
 name = "PlantUML"
-version = "0.1.0"
+version = "0.1.1"
 schema_version = 1
 authors = ["Gabriel Silva <gabe@gabe.id>"]
 description = "PlantUML support."
 repository = "https://github.com/gabeidx/zed-plantuml"
 
 [grammars.plantuml]
-repository = "https://github.com/Szeliga/tree-sitter-plantuml"
-commit = "a3cfbf844d727b077f0070769e6d1c0977cc58f9"
+repository = "https://github.com/bemyak/tree-sitter-plantuml"
+commit = "45e96e04c2857ae82a268fe970f0e8177320fe42"

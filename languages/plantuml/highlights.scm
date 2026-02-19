@@ -27,6 +27,7 @@
 
 (string) @string
 (single_quote_string) @string
+(comment) @comment
 (unqouted_string) @string
 
 (preprocessor
